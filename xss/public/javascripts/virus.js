@@ -13,4 +13,6 @@ function start() {
   }, 1000)
 }
 
-start()
+document.addEventListener('load', start)
+
+document.write('VIRUS VIRUS VIRUS')

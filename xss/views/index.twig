@@ -3,17 +3,17 @@
 {% block body %}
 
 <h1>Teste de XSS</h1>
-<p>Welcome to {{title}}</p>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellendus eveniet eaque autem
-  architecto
-  debitis consequatur soluta quam iure culpa illo, facere fugiat, dicta necessitatibus quaerat saepe nihil sed nobis?
-</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellendus eveniet eaque
-  autem architecto
-  debitis consequatur soluta quam iure culpa illo, facere fugiat, dicta necessitatibus quaerat saepe nihil sed nobis?
-</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellendus eveniet eaque autem architecto
-  debitis consequatur soluta quam iure culpa illo, facere fugiat, dicta necessitatibus quaerat saepe nihil sed nobis?
-</p>
+<form action="/comments" method="post">
+  <label for="comment">
+    <textarea name="comment" id="comentario" cols="30" rows="10"></textarea>
+    <br>
+    <input type="submit" value="Enviar">
+  </label>
+</form>
+
+<div>
+  {{comments}}
+</div>
+
 {% endblock %}
