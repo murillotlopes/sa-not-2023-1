@@ -1,0 +1,19 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+
+<h1>Teste de XSS</h1>
+<p>Welcome to {{title}}</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellendus eveniet eaque autem
+  architecto
+  debitis consequatur soluta quam iure culpa illo, facere fugiat, dicta necessitatibus quaerat saepe nihil sed nobis?
+</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellendus eveniet eaque
+  autem architecto
+  debitis consequatur soluta quam iure culpa illo, facere fugiat, dicta necessitatibus quaerat saepe nihil sed nobis?
+</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellendus eveniet eaque autem architecto
+  debitis consequatur soluta quam iure culpa illo, facere fugiat, dicta necessitatibus quaerat saepe nihil sed nobis?
+</p>
+{% endblock %}
