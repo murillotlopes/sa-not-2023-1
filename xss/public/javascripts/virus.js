@@ -1,18 +1,20 @@
 let normal = false
+
 function start() {
+  const audio = new Audio('https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3')
   setInterval(() => {
-    let body = document.body
+    const body = document.body
     if (normal) {
       body.style.color = 'black'
       body.style.backgroundColor = 'white'
-    } else {
+    }
+    else {
       body.style.color = 'white'
       body.style.backgroundColor = 'black'
     }
     normal = !normal
+    audio.play()
   }, 1000)
 }
 
-document.addEventListener('load', start)
-
-document.write('VIRUS VIRUS VIRUS')
+window.addEventListener('load', start)

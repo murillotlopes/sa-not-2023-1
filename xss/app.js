@@ -19,6 +19,9 @@ app.set('view engine', 'twig');
 
 app.use(logger('dev'));
 app.use(express.json());
+
+const expressSanitizer = require('express-sanitizer')
+app.use(expressSanitizer())
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
