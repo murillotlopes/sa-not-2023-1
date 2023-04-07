@@ -1,9 +1,9 @@
 var express = require('express');
-const { checkAuth } = require('../utils/utils');
 var router = express.Router();
+const { checkAuth } = require('../utils/utils')
 
 /* GET home page. */
-router.get('/', checkAuth, function (req, res, next) {
+router.get('/', checkAuth, function(req, res, next) {
   res.render('index', { title: 'Autenticação por sessão' });
 });
 

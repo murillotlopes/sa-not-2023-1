@@ -14,7 +14,7 @@ async function testConn() {
     await conn.query('select now()')
     console.log('** POSTGRES: conexão estabelecida')
   }
-  catch(error) {
+  catch (error) {
     console.error('** POSTGRES: ERRO => ' + error)
   }
 }
